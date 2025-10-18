@@ -6,10 +6,11 @@ import { Linkedin, Github, Mail } from "lucide-react";
 
 
 export default function Home() {
-  const homeRef = useRef(null);
-  const aboutRef = useRef(null);
-  const projectsRef = useRef(null);
-  const contactRef = useRef(null);
+  const homeRef = useRef<HTMLElement | null>(null);
+  const aboutRef = useRef<HTMLElement | null>(null);
+  const projectsRef = useRef<HTMLElement | null>(null);
+  const contactRef = useRef<HTMLElement | null>(null);
+  
 
   const scrollToSection = (ref: React.RefObject<HTMLElement>) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
