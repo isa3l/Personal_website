@@ -12,9 +12,9 @@ export default function Home() {
   const contactRef = useRef<HTMLElement | null>(null);
   
 
-  const scrollToSection = (ref: React.RefObject<HTMLElement>) => {
-    ref.current.scrollIntoView({ behavior: "smooth" });
-  };
+  const scrollToSection = (ref: React.RefObject<HTMLElement | null>) => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };  
 
   return (
     <div className="bg-gray-950 text-white min-h-screen overflow-hidden">
