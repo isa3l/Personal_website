@@ -11,7 +11,7 @@ export default function Home() {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
-  const scrollToSection = (ref) => {
+  const scrollToSection = (ref: React.RefObject<HTMLElement>) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
