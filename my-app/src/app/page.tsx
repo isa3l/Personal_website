@@ -75,9 +75,9 @@ export default function Home() {
             transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="relative mb-8"
           >
-            <div className="absolute -inset-4 rounded-full bg-white opacity-[0.06] blur-2xl" />
+            <div className="absolute -inset-5 rounded-full bg-white opacity-[0.06] blur-2xl" />
             <div className="absolute -inset-px rounded-full bg-gradient-to-b from-white/15 to-transparent" />
-            <img src="/IsaelL.jpg" alt="Isael Larios" className="relative w-44 h-44 rounded-full object-cover object-top shadow-2xl border border-white/10" />
+            <img src="/IsaelL.jpg" alt="Isael Larios" className="relative w-56 h-56 rounded-full object-cover shadow-2xl border border-white/10" style={{ objectPosition: '50% 18%' }} />
           </motion.div>
 
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7, delay: 0.4 }} className="text-[10px] tracking-[0.4em] uppercase font-mono text-white/30 mb-3">
