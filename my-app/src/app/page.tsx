@@ -32,7 +32,7 @@ export default function Home() {
     ref.current?.scrollIntoView({ behavior: "smooth" });
 
   return (
-    <div className="bg-[#1a1a1a] text-white min-h-screen overflow-x-hidden">
+    <div className="bg-[#161310] text-white min-h-screen overflow-x-hidden">
 
       {/* ── Floating Navbar ── */}
       <nav className="fixed top-5 left-1/2 -translate-x-1/2 z-50">
@@ -54,10 +54,10 @@ export default function Home() {
           ── HERO ──
           ══════════════════════════════════ */}
       <section ref={homeRef} className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 pt-24 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-no-repeat" style={{ backgroundImage: "url('/berkeley.jpg')", backgroundPosition: "center 30%" }} />
-        <div className="absolute inset-0 bg-[#111]/60" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_35%,rgba(0,0,0,0.5)_100%)]" />
-        <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-[#1a1a1a] to-transparent" />
+        <div className="absolute inset-0 bg-cover bg-no-repeat" style={{ backgroundImage: "url('/Berkeleyy.png')", backgroundPosition: "center center" }} />
+        <div className="absolute inset-0 bg-[#0d0b08]/62" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_30%,rgba(10,8,4,0.6)_100%)]" />
+        <div className="absolute bottom-0 left-0 right-0 h-56 bg-gradient-to-t from-[#161310] to-transparent" />
 
         <div className="relative z-10 flex flex-col items-center">
           <motion.h1
@@ -77,14 +77,11 @@ export default function Home() {
           >
             <div className="absolute -inset-5 rounded-full bg-white opacity-[0.06] blur-2xl" />
             <div className="absolute -inset-px rounded-full bg-gradient-to-b from-white/15 to-transparent" />
-            <img src="/IsaelL.jpg" alt="Isael Larios" className="relative w-56 h-56 rounded-full object-cover shadow-2xl border border-white/10" style={{ objectPosition: '50% 18%' }} />
+            <img src="/IsaelL.jpg" alt="Isael Larios" className="relative w-56 h-56 rounded-full object-cover shadow-2xl border border-white/10" style={{ objectPosition: '50% -80px' }} />
           </motion.div>
 
-          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7, delay: 0.4 }} className="text-[10px] tracking-[0.4em] uppercase font-mono text-white/30 mb-3">
-            ISAEL LARIOS
-          </motion.p>
 
-          <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.5 }} className="text-white/50 text-sm max-w-sm leading-relaxed mb-2">
+          <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.5 }} className="text-white/70 text-sm font-medium max-w-sm leading-relaxed mb-2">
             EECS @ <span className="text-accent font-medium">UC Berkeley</span> · Contract Software Engineer @ Sony PlayStation
           </motion.p>
 
@@ -95,7 +92,7 @@ export default function Home() {
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.8 }} className="flex items-center gap-3 mt-8">
-            <button onClick={() => scroll(experienceRef)} className="px-6 py-2.5 bg-white hover:bg-white/90 text-[#1a1a1a] rounded-xl text-sm font-semibold transition-all duration-200 shadow-[0_0_24px_rgba(255,255,255,0.12)]">
+            <button onClick={() => scroll(experienceRef)} className="px-6 py-2.5 bg-white hover:bg-white/90 text-[#161310] rounded-xl text-sm font-semibold transition-all duration-200 shadow-[0_0_24px_rgba(255,255,255,0.12)]">
               Experience
             </button>
             <button onClick={() => scroll(projectsRef)} className="px-6 py-2.5 bg-white/[0.05] hover:bg-white/[0.09] border border-white/[0.09] rounded-xl text-sm font-semibold text-white/60 hover:text-white transition-all duration-200">
